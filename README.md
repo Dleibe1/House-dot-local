@@ -1,0 +1,1 @@
+Run the pio commands in extra_scripts.zsh to build the react code and flash the LittleFS image containing it.
