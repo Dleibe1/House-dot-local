@@ -3,8 +3,8 @@
 #include <ESPAsyncWebServer.h>
 #include <LittleFS.h>  // Change from SPIFFS.h to LittleFS.h
 
-const char* ssid = "kutzeberts";
-const char* password = "ebertskutz";
+const char* ssid = "yourssid";
+const char* password = "yourpw";
 
 AsyncWebServer server(80);
 
