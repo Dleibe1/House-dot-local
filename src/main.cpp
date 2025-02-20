@@ -2,10 +2,11 @@
 #include <WiFi.h>
 #include <ESPAsyncWebServer.h>
 #include <ESPmDNS.h>
-#include <LittleFS.h> // Change from SPIFFS.h to LittleFS.h
+#include <LittleFS.h> 
+#include "env.h"
 
-const char *ssid = "";
-const char *password = "";
+const char *ssid = YOUR_SSID;
+const char *password = YOUR_PASSWORD;
 
 AsyncWebServer server(80);
 
@@ -13,7 +14,6 @@ void setup()
 {
     Serial.begin(115200);
     WiFi.setHostname("matt");
-
     // Connect to WiFi
     WiFi.begin(ssid, password);
     Serial.print("Connecting to WiFi...");
