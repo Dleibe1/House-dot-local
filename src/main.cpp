@@ -4,14 +4,10 @@
 #include <ESPmDNS.h>
 #include <LittleFS.h> 
 #include "env.h"
+#include "ArduinoJson.h"
 
-<<<<<<< HEAD
 const char *ssid = YOUR_SSID;
 const char *password = YOUR_PASSWORD;
-=======
-const char* ssid = "yourssid";
-const char* password = "yourpw";
->>>>>>> 9e0253b1703e554547ad9105269312182a77a1be
 
 AsyncWebServer server(80);
 
