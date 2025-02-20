@@ -1,6 +1,6 @@
 
 
-I got this working on an ESP32 S2 Mini
+I got this working on an ESP32 S2 Mini and a DOIT ESP32 DevKit V1
 
 Update platform.ini to match the specs of your board
 
