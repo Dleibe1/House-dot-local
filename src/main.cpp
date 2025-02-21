@@ -2,7 +2,7 @@
 #include <WiFi.h>
 #include <ESPAsyncWebServer.h>
 #include <ESPmDNS.h>
-#include <LittleFS.h> 
+#include <LittleFS.h>
 #include "env.h"
 #include "ArduinoJson.h"
 
@@ -59,6 +59,25 @@ void setup()
     server.serveStatic("/static/", LittleFS, "/");
     server.on("/", HTTP_GET, [](AsyncWebServerRequest *request)
               { request->send(LittleFS, "/index.html", "text/html"); });
+
+    server.on("/api/who-did-what-last", HTTP_GET, [](AsyncWebServerRequest *request)
+              {
+                        // Open the file in read mode. Note the path starts with "/" and includes the subdirectory.
+                        File file = LittleFS.open("/api/whoDidWhatLast.json", "r");
+                        if (!file) {
+                          request->send(404, "application/json", "{\"error\":\"File not found\"}");
+                          return;
+                        }
+                        
+                        // Read the file into a String. You can also use file.readString() if preferred.
+                        String fileContent;
+                        while (file.available()) {
+                          fileContent += (char)file.read();
+                        }
+                        file.close();
+                      
+                        // Send the file contents as a JSON response.
+                        request->send(200, "application/json", fileContent); });
 
     server.onNotFound([](AsyncWebServerRequest *request)
                       { request->send(LittleFS, "/index.html", "text/html"); });
