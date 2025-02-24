@@ -1,5 +1,5 @@
 {
-	"ryan": ["nothing yet"],
-	"eden": ["nothing yet"],
-	"dan": ["nothing yet"]
+	"ryan": {"chores": {"dishes": false, "trash": false, "recycling": false}},
+	"eden": {"chores": {"dishes": false, "trash": false, "recycling": false}},
+	"dan": {"chores": {"dishes": false, "trash": false, "recycling": false}}
 }
