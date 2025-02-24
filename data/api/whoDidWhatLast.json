@@ -1,5 +1,5 @@
 {
-	"ryan": {"chores": {"dishes": false, "trash": false, "recycling": true}},
+	"ryan": {"chores": {"dishes": false, "trash": false, "recycling": false}},
 	"eden": {"chores": {"dishes": false, "trash": false, "recycling": false}},
 	"dan": {"chores": {"dishes": false, "trash": false, "recycling": false}}
 }

@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react"
+import React, {useContext, useState, useEffect, useRef} from "react"
 import {useParams, Navigate} from "react-router-dom"
 import {WhoseDoneWhatContext} from "../contexts/WhoseDoneWhatContext"
 
@@ -7,11 +7,7 @@ const AreYouSure = ({user, setUser}) => {
 	const [successShouldRedirect, setSuccessShouldRedirect] = useState(false)
 	const params = useParams()
 	const {chore} = params
-
-	if(!user.length){
-		return <Navigate to="/" />
-	}
-
+	const isInitialMount = useRef(true)
 	const handleYes = () => {
 		const userKey = user
 		setWhoseDoneWhat((prevState) => {
@@ -27,37 +23,41 @@ const AreYouSure = ({user, setUser}) => {
 			}, {})
 			return updatedState
 		})
-		postWhatIDid(whoseDoneWhat)
 	}
 
 	const handleNo = () => {
 		setUser("")
-		return <Navigate to="/" />
 	}
 
+	useEffect(() => {
+		if (isInitialMount.current) {
+			isInitialMount.current = false
+		} else {
+			postWhatIDid(whoseDoneWhat)
+		}
+	}, [whoseDoneWhat])
+
 	const postWhatIDid = async (choresData) => {
+		console.log(choresData)
 		try {
-			const response = await fetch(`/api/whoDidWhatLast.json,`, {
+			const response = await fetch(`/api/who-did-what-last`, {
 				method: "POST",
-				headers: new Headers({
-					"Content-Type": "application/json",
-				}),
+				headers: {"Content-Type": "application/json"},
 				body: JSON.stringify(choresData),
 			})
 			if (!response.ok) {
 				throw new Error(`${response.status} (${response.statusText})`)
 			}
 			const body = await response.json()
+			console.log(body)
 			setSuccessShouldRedirect(true)
 			setUser("")
-			console.log(body)
 		} catch (error) {
 			console.log(error)
 		}
 	}
 
-	if (successShouldRedirect) {
-		setUser("")
+	if (!user.length || successShouldRedirect) {
 		return <Navigate to="/" />
 	}
 
