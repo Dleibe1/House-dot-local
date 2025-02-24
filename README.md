@@ -10,9 +10,13 @@ const char *ssid = YOUR_SSID;
 const char *password = YOUR_PASSWORD;
 ```
 
-These lines let you give your React app a hostname that you can connect to from your local network.  In this case, visiting matt.local in the browser is the same as connecting to the ip address, the React app will be served.
+This line gives your ESP32 a hostname on your network
 ```cpp
 WiFi.setHostname("matt");
+```
+
+Calling MDNS.begin("matt") allows you to navigate in your browser to matt.local.  Give this any name you want.  You will only be able to access the app if the device you're accessing the app from is also on the local network.
+```cpp
 if (!MDNS.begin("matt"))
     {
         Serial.println("Error starting mDNS responder!");
