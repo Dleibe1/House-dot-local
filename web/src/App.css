@@ -1,4 +1,83 @@
-.App {
-  text-align: center;
+button {
+	font-size: 70px;
+	border-radius: 30px;
+	height: 15vh;
+	margin: 1rem;
+	width: 100%;
 }
 
+.go-back button {
+	font-size: 40px;
+}
+
+.go-back a {
+	align-self: center;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.name-buttons .eden.btn {
+	background-color: pink-btn;
+}
+
+.name-buttons .ryan.btn {
+	background-color: rgb(255, 157, 157);
+}
+
+.name-buttons .dan.btn {
+	background-color: rgb(120, 120, 255);
+}
+
+.welcome-page {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.welcome-page h1 {
+	font-size: 2rem;
+  margin: 10px 0px;
+
+}
+
+.welcome-page a,
+.which-did-you-do a {
+	display: flex;
+	text-decoration: none;
+  width: 100%;
+}
+
+.name-buttons,
+.chores-buttons {
+  width: 100%;
+}
+
+.pink-btn {
+	background-color: pink;
+}
+.red-btn {
+	background-color: rgb(255, 157, 157);
+}
+
+.blue-btn {
+	background-color: rgb(120, 120, 255);
+}
+
+.green-btn {
+  background-color: green;
+}
+
+.who-did-what,
+.which-did-you-do,
+.name-buttons,
+.chores-buttons
+ {
+  display: flex;
+	text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
