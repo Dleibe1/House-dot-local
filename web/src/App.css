@@ -33,26 +33,25 @@ button:hover {
 .welcome-page {
 	display: flex;
 	flex-direction: column;
-  align-items: center;
-  width: 100%;
+	align-items: center;
+	width: 100%;
 }
 
 .welcome-page h1 {
-	font-size: 2rem;
-  margin: 10px 0px;
-
+	font-size: 3rem;
+	margin: 10px 0px;
 }
 
 .welcome-page a,
 .which-did-you-do a {
 	display: flex;
 	text-decoration: none;
-  width: 100%;
+	width: 100%;
 }
 
 .name-buttons,
 .chores-buttons {
-  width: 100%;
+	width: 100%;
 }
 
 .pink-btn {
@@ -67,17 +66,21 @@ button:hover {
 }
 
 .green-btn {
-  background-color: green;
+	background-color: green;
 }
 
 .who-did-what,
 .which-did-you-do,
 .name-buttons,
-.chores-buttons
- {
-  display: flex;
+.chores-buttons {
+	display: flex;
 	text-align: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+}
+
+.who-did-what p {
+	font-size:25px;
+	margin: 5px;
 }
