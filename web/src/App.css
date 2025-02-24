@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+button {
+	font-size: 70px;
+	border-radius: 30px;
+	height: 15vh;
+	margin: 1rem;
+	width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.go-back button {
+	font-size: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.go-back a {
+	align-self: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+	cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.name-buttons .eden.btn {
+	background-color: pink-btn;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name-buttons .ryan.btn {
+	background-color: rgb(255, 157, 157);
+}
+
+.name-buttons .dan.btn {
+	background-color: rgb(120, 120, 255);
+}
+
+.welcome-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.welcome-page h1 {
+	font-size: 3rem;
+	margin: 10px 0px;
+}
+
+.welcome-page a,
+.which-did-you-do a {
+	display: flex;
+	text-decoration: none;
+	width: 100%;
+}
+
+.name-buttons,
+.chores-buttons {
+	width: 100%;
+}
+
+.pink-btn {
+	background-color: pink;
+}
+.red-btn {
+	background-color: rgb(255, 157, 157);
+}
+
+.blue-btn {
+	background-color: rgb(120, 120, 255);
+}
+
+.green-btn {
+	background-color: green;
+}
+
+.who-did-what,
+.which-did-you-do,
+.name-buttons,
+.chores-buttons {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+}
+
+.who-did-what p {
+	font-size:25px;
+	margin: 5px;
 }
