@@ -20,6 +20,9 @@ WiFi.setHostname("matt");
 ```
 
 Calling MDNS.begin("name-on-network") lets you connect to the app in your browser via name-on-network.local for anyone on the local network.
+
+[main.cpp](src/main.cpp):
+...cpp
     {
         Serial.println("Error starting mDNS responder!");
         while (1)
