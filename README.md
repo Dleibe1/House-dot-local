@@ -1,6 +1,7 @@
 
 # A full stack React app on an ESP32
 
+## No blinking lights, nothing plugged into any pins, just a full stack web app hosted on an $8 micro controller
 I got this working on an ESP32 S2 Mini and a DOIT ESP32 DevKit V1
 
 Update [platform.ini](platformio.ini) to match the specs of your board
