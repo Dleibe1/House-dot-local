@@ -1,5 +1,5 @@
 
-#A full stack React app on an ESP32
+# A full stack React app on an ESP32
 
 I got this working on an ESP32 S2 Mini and a DOIT ESP32 DevKit V1
 
