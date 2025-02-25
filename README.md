@@ -24,6 +24,7 @@ Calling MDNS.begin("name-on-network") lets you connect to the app in your browse
 
 In [main.cpp](src/main.cpp):
 ```cpp
+      if (!MDNS.begin("house"))
     {
         Serial.println("Error starting mDNS responder!");
         while (1)
