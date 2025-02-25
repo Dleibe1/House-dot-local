@@ -34,7 +34,7 @@ In [main.cpp](src/main.cpp):
     }
 ```
 
-With this setup, I can connect to my app at house.local in the address bar of any browser.
+With this setup, I can connect to my app at house.local in the address bar of any browser so long as I'm also connected to my local wifi network.
 
 Run the commands in extra_scripts.zsh to build the react app and flash it to the ESP32.  
 
