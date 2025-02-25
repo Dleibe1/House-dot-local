@@ -1,7 +1,7 @@
 
 # A full stack React app on an ESP32
 
-### This guide gave me a good start:
+### This guide by Paul Ridgway gave me a good start:
 [https://blockdev.io/react-on-the-esp32/](https://blockdev.io/react-on-the-esp32/)
 Thanks to Paul Ridgway's guide, I was able to flash the React app to the ESP32 and host the files with the [ESPAsyncWebServer Library](https://github.com/lacamera/ESPAsyncWebServer)
 ## No blinking lights, nothing plugged into any pins. 
