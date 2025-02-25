@@ -34,6 +34,8 @@ In [main.cpp](src/main.cpp):
     }
 ```
 
+With this setup, I can connect to my app at house.local in the address bar of chrome.
+
 Run the commands in extra_scripts.zsh to build the react app and flash it to the ESP32.  
 
 I followed this guide. Shout out to Shout out to Paul Ridgway:
