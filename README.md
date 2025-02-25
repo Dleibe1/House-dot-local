@@ -1,6 +1,9 @@
 
 # A full stack React app on an ESP32
 
+### I followed this guide to get set up with flashing the React app to the ESP32:
+### [https://blockdev.io/react-on-the-esp32/](https://blockdev.io/react-on-the-esp32/)
+
 ## No blinking lights, nothing plugged into any pins. 
 ## Just a full stack web app hosted on an $8 micro controller.
 ## Running at about 200 mA, plugged into a USB charging brick
