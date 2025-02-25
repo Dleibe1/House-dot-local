@@ -4,7 +4,7 @@
 ## No blinking lights, nothing plugged into any pins. 
 ## Just a full stack web app hosted on an $8 micro controller.
 ## Running at about 200 mA, plugged into a USB charging brick
-### I got this working on an ESP32 S2 Mini and a DOIT ESP32 DevKit V1
+### I got this working on an ESP32 DOIT ESP32 DevKit V1
 
 Update [platform.ini](platformio.ini) to match the specs of your board
 
