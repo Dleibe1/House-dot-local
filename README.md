@@ -3,7 +3,7 @@
 🚧 This readme is still a work in progress 🚧
 ## No blinking lights, nothing plugged into any pins, still does something cool.
 ## A working full stack React web app hosted on a [$9 micro controller](https://www.amazon.com/ESP-WROOM-32-Development-Microcontroller-Integrated-Compatible/dp/B07WCG1PLV/ref=sr_1_3?dib=eyJ2IjoiMSJ9.XBINg-sjhfF_gUtnMiKGjjEQQzaaOnS0BOX5B4WtqfLMYUub-A1GOALt3HxF_ltfwmsF1huTZqdb_GPfN7YgqBCPEWnZZEoSis5a2gL0lbApUkGkdrTqSVIZIK84BpLlgQyAlFxEeeDBYWmaTW-S-6HRvfIgAD6uxfau0-KkxZA1I_s7jVhrCfheWcDCVOYpVdbJe0Dr20tsEn3N8AtdCb1pBBWHiAy1aa-jG9200dY.avrbviAOUNPIh2avs_Og0ooquN4gcQFaWDeXi74dtg0&dib_tag=se&hvadid=557376324384&hvdev=c&hvlocphy=9007909&hvnetw=g&hvqmt=e&hvrand=5589188309751002162&hvtargid=kwd-462782567668&hydadcr=24328_13517622&keywords=esp32%2Bamazon&mcid=36bbc68ae03b3a6fa1ca8dca6f0091c1&qid=1740456180&sr=8-3&th=1), running at about 200 mA.
-### This example is for an ESP32 DOIT ESP32 DevKit V1
+
 [This guide by Paul Ridgway](https://blockdev.io/react-on-the-esp32/) gave me a good start with flashing the React app to the ESP32 and hosting it with the [ESPAsyncWebServer](https://github.com/lacamera/ESPAsyncWebServer) library.  From there I created some routes to read and write data to [this JSON file](src/whoDidWhatLast.json).
 
 Update [platform.ini](platformio.ini) to match the specs of your board
