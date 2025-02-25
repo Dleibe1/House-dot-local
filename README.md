@@ -1,7 +1,7 @@
 
 # A full stack React app on an ESP32
 
-### I followed this guide to get set up with flashing the React app to the ESP32:
+### I followed this guide to get set up with flashing the React app to the ESP32's built in storage:
 ### [https://blockdev.io/react-on-the-esp32/](https://blockdev.io/react-on-the-esp32/)
 
 ## No blinking lights, nothing plugged into any pins. 
