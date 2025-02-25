@@ -19,8 +19,7 @@ This line gives your ESP32 a hostname on your network
 WiFi.setHostname("matt");
 ```
 
-Calling MDNS.begin("name-on-network") lets you connect to the app in your browser as name-on-network.local (if it's your local wifi network)
-if (!MDNS.begin("name-on-network"))
+Calling MDNS.begin("name-on-network") lets you connect to the app in your browser via name-on-network.local for anyone on the local network.
     {
         Serial.println("Error starting mDNS responder!");
         while (1)
