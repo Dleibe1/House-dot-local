@@ -38,7 +38,3 @@ With this setup, I can connect to my app at house.local in the address bar of an
 To connect to your ESP32 outside your local network, you will need to learn how to use port forwarding with the ESP32's ip address.
 
 Run the commands in extra_scripts.zsh to build the react app and flash it to the ESP32.  
-
-I followed this guide. Shout out to Shout out to Paul Ridgway:
-
-[https://blockdev.io/react-on-the-esp32/](https://blockdev.io/react-on-the-esp32/)
