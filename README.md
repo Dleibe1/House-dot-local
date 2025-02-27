@@ -6,7 +6,7 @@
 
 [This guide by Paul Ridgway](https://blockdev.io/react-on-the-esp32/) gave me a good start with flashing the React app to the ESP32 and hosting it with the [ESPAsyncWebServer](https://github.com/lacamera/ESPAsyncWebServer) library.  From there I created some routes to read and write data to [this JSON file](src/whoDidWhatLast.json).
 
-Update [platform.ini](platformio.ini) to match the specs of your board
+I am using an esp32 doit-devkit-v1.  It is important that you use this same microcontroller, as the settings in the [no_ota.csv](no_ota.csv) file may not be the same!
 
 Set these to your WiFi credentials in the [main.cpp](src/main.cpp) file
 ```cpp
@@ -37,4 +37,6 @@ In [main.cpp](src/main.cpp):
 With this setup, I can connect to my app at house.local in the address bar of any browser so long as I'm also connected to my local wifi network.  
 To connect to your ESP32 outside your local network, you will need to learn how to use port forwarding with the ESP32's ip address.
 
-Run the commands in extra_scripts.zsh to build the react app and flash it to the ESP32.  
+Run the commands in extra_scripts.zsh to build the react app and flash it to the ESP32.
+
+This is still a work in progress.  I made it for my roommates and I to keep track of who did what chores last.  The fetch requests read and write to a single JSON file.  I mostly did this as an experiment.  So far I've only seen ESP32 React apps that report sensor data or commuicate with a device (like a servo).  I wanted to see if I could set up a web app with something like REST integration on an ESP32.
