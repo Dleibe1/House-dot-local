@@ -6,6 +6,8 @@
 
 [This guide by Paul Ridgway](https://blockdev.io/react-on-the-esp32/) gave me a good start with flashing the React app to the ESP32 and hosting it with the [ESPAsyncWebServer](https://github.com/lacamera/ESPAsyncWebServer) library.  From there I created some routes to read and write data to [this JSON file](src/whoDidWhatLast.json).
 
+You will need some familiarity with the [PlatformIO extension in VSCode](https://platformio.org/).  I reccommend it for all Arduino and ESP32 projects!
+
 I am using an esp32 doit-devkit-v1.  It is important that you use this same microcontroller, as the settings in [no_ota.csv](no_ota.csv) may not be the same!
 
 Set these to your WiFi credentials in the [main.cpp](src/main.cpp) file
