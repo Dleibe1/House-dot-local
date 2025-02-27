@@ -6,7 +6,7 @@
 
 [This guide by Paul Ridgway](https://blockdev.io/react-on-the-esp32/) gave me a good start with flashing the React app to the ESP32 and hosting it with the [ESPAsyncWebServer](https://github.com/lacamera/ESPAsyncWebServer) library.  From there I created some routes to read and write data to [this JSON file](src/whoDidWhatLast.json).
 
-I am using an esp32 doit-devkit-v1.  It is important that you use this same microcontroller, as the settings in the [no_ota.csv](no_ota.csv) file may not be the same!
+I am using an esp32 doit-devkit-v1.  It is important that you use this same microcontroller, as the settings in [no_ota.csv](no_ota.csv) may not be the same!
 
 Set these to your WiFi credentials in the [main.cpp](src/main.cpp) file
 ```cpp
@@ -40,4 +40,4 @@ To connect to your ESP32 outside your local network, you will need to learn how 
 
 Run the commands in [extra_scripts.zsh](extra_script.zsh) to build the react app and flash it to the ESP32.
 
-This is still a work in progress.  I made it for my roommates and I to keep track of who did what chores last.  The Fetch requests read from and write to a [single JSON file](src/whoDidWhatLast.json).
+This is still a work in progress.  I made it for my roommates and I to keep track of who did what chores last.
