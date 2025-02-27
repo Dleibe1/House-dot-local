@@ -40,4 +40,4 @@ To connect to your ESP32 outside your local network, you will need to learn how 
 
 Run the commands in extra_scripts.zsh to build the react app and flash it to the ESP32.
 
-This is still a work in progress.  I made it for my roommates and I to keep track of who did what chores last.  The Fetch requests read from and write to a single JSON file
+This is still a work in progress.  I made it for my roommates and I to keep track of who did what chores last.  The Fetch requests read from and write to a [single JSON file](src/whoDidWhatLast.json).
