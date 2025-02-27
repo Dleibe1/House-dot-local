@@ -42,6 +42,6 @@ Run the commands in extra_scripts.zsh to build the react app and flash it to the
 
 This is still a work in progress.  I made it for my roommates and I to keep track of who did what chores last.  The fetch requests read and write to a single JSON file.  
 
-I wanted to see if I could set up a web app with something like REST API integration on an ESP32 with no external hardware.
+I wanted to see if I could set up a React app with REST API integration using Fetch requests on an ESP32 with no external hardware.
 
 The app isn't pretty, I may make a template version of this to just have working GET and POST routes and their respective fetch requests in react, along with basic routing setup.  Unless the people at your place are also named Ryan, Eden, and Dan and you don't mind your app looks like it was made in 2004.
