@@ -40,6 +40,4 @@ To connect to your ESP32 outside your local network, you will need to learn how 
 
 Run the commands in extra_scripts.zsh to build the react app and flash it to the ESP32.
 
-This is still a work in progress.  I made it for my roommates and I to keep track of who did what chores last.  The fetch requests read and write to a single JSON file.  I need to update the folder structure and naming to better resemble what real REST integration would look like.
-
-I wanted to see if I could set up a React app with REST API integration using Fetch requests on an ESP32 with no external hardware.
+This is still a work in progress.  I made it for my roommates and I to keep track of who did what chores last.  The Fetch requests read and write to a single JSON file.  I need to update the folder structure and naming to better resemble what real REST integration would look like.  I may make a template version of this for anyone that wants to make a goofy full-stack ESP32 doit devkit-1 app lol.
