@@ -35,6 +35,7 @@ In [main.cpp](src/main.cpp):
 ```
 
 With this setup, I can connect to my app at house.local in the address bar of any browser so long as I'm also connected to my local wifi network.  
+
 To connect to your ESP32 outside your local network, you will need to learn how to use port forwarding with the ESP32's ip address.
 
 Run the commands in extra_scripts.zsh to build the react app and flash it to the ESP32.
