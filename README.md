@@ -8,7 +8,7 @@
 
 You will need some familiarity with the [PlatformIO extension in VSCode](https://platformio.org/).  I reccommend it for all Arduino and ESP32 projects!
 
-I am using an esp32 doit-devkit-v1.  It is important that you use this same microcontroller, as the settings in [no_ota.csv](no_ota.csv) may not be the same!
+I am using an esp32 doit-devkit-v1.  It is important that you use this same microcontroller, as the settings in [no_ota.csv](no_ota.csv) may not work the same for all ESP32 development boards.
 
 Set these to your WiFi credentials in the [main.cpp](src/main.cpp) file
 ```cpp
